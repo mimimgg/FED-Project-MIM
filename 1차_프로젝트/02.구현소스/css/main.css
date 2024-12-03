@@ -3,145 +3,136 @@
 /* 외부 CSS */
 @import url(./reset.css);
 @import url(./common.css);
-@import url(./core.css);
 
 body * {
   outline: 3px dashed black;
 }
 
-/****************** header ******************/
+/*************************** 👉 header ***************************/
 header {
-  width: 100%;
   position: fixed;
-  z-index: 1;
+  margin-top: 5.6rem;
+  width: 100%;
 }
-
-nav.navigation {
+.top-area {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-
-  height: 100%;
-  margin: 5.6rem 6.4rem 0;
 }
-h1#logo {
+.logo {
   width: 8rem;
   height: 4rem;
 }
-button.header-menu-button {
+.nav-btn {
   width: 4rem;
   height: 4rem;
-  border: 4px solid #333;
 }
+/*************************** //header ***************************/
 
-/****************** main ******************/
+/*************************** 👉 main ***************************/
 main {
   width: 100%;
-  min-height: 10000px;
-  background-color: antiquewhite;
 }
 
-/****************** 비주얼배너 ******************/
+/************************ visual-banner ************************/
 .visual-banner {
   width: 100%;
   height: 100vh;
-  background-color: #1a71fe;
+  background-color: #1A71FE;
 }
 .visual-banner h2 {
+  width: 80%;
   position: relative;
   top: 50%;
+  translate: 0 -50%;
   text-align: center;
   color: #fff;
   font-size: 6vw;
-  width: 80%;
   margin: 0 auto;
 }
 
-/****************** 카드박스 ******************/
-.card-banner {
+/************************ visual-card ************************/
+.visual-card {
   width: 100%;
-  height: 600px;
-  background-color: #333;
-  left: 6.4rem;
+  height: 56rem;
+  background-color: #1A71FE;
 }
-.card-banner h3 {
+.visual-card h3 {
+  font-size: 3.2rem;
   color: #fff;
-  font-size: 3.2vw;
 }
 
-/****************** 브랜드소개 ******************/
-section.brand-info {
+/************************ brand-int ************************/
+.brand-int {
   width: 100%;
-  height: auto;
-  background-color: #f5f3ed;
-  padding: 16.2rem 0;
-}
-section.brand-info h3 {
-  color: #333;
-  font-size: 7vw;
-  width: 90%;
-  margin-bottom: 10rem;
-}
-.brand-box {
-  display: flex;
-  width: 90%;
-  height: 64rem;
-  margin: 0 auto;
-}
-.brand-left {
-  width: 50%;
-  height: auto;
-}
-.brand-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8rem;
-  width: 50%;
-  height: auto;
-}
-.brand-right > h4 {
-  font-size: 2vw;
-}
-.brand-right > button {
-  padding: 1rem 2rem;
-  width: 21rem;
-  font-size: 2.6rem;
-  /* letter-spacing: -0.2rem; */
-  border-radius: 1rem;
-  font-family: "Montserrat";
+  height: 167rem;
+  background-color: #F5F3ED;
 }
 
-section.explanation-accordion {
+/************************ bigger-img ************************/
+.bigger-img {
   width: 100%;
-  height: auto;
-  background-color: #f7c518;
-}
-.bigger_image {
-  padding: 16.2rem 0;
-}
-.bigger_image > img {
-  width: 100%;
-  border-radius: 2rem;
+  height: 83.1rem;
+  margin: 6.4rem 0;
+  background-color: #F5F3ED;
 }
 
-section.image-group {
+/************************ accordion-int ************************/
+.accordion-int {
   width: 100%;
-  height: auto;
-  background-color: #f7c518;
-}
-section.profile {
-}
-section.marquee {
-}
-section.keyword {
-}
-section.text-show {
+  height: 95.4rem;
+  margin: 6.4rem 0;
+  background-color: #F5F3ED;
 }
 
-/****************** 👉 footer ******************/
+/************************ image-group ************************/
+.image-group {
+  width: 100%;
+  height: 95.2rem;
+  margin: 6.4rem 0;
+  background-color: #F5F3ED;
+}
+
+/************************ profile-int ************************/
+.profile-int {
+  width: 100%;
+  height: 124.2rem;
+  margin: 6.4rem 0;
+  background-color: #A8BAAD;
+}
+
+/************************ marquee-int ************************/
+.marquee-int {
+  width: 100%;
+  height: 174.2rem;
+  margin: 6.4rem 0;
+  background-color: #000;
+}
+
+/************************ keyword ************************/
+.keyword {
+  width: 100%;
+  height: 108rem;
+  background-color: aquamarine;
+}
+
+/************************ show-text ************************/
+.show-text {
+  width: 100%;
+  height: 95.2rem;
+  margin: 6.4rem 0;
+  background-color: #000;
+}
+
+/*************************** //main ***************************/
+
+
+
+/*************************** 👉 footer ***************************/
 footer {
   width: 100%;
-  height: 100px;
-  background-color: #ccc;
+  height: 14rem;
+
+  background-color: #000;
 }
+/*************************** //footer ***************************/
+
