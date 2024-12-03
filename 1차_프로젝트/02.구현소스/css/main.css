@@ -37,51 +37,37 @@ button.header-menu-button {
 /****************** main ******************/
 main {
   width: 100%;
-  height: auto;
+  min-height: 10000px;
+  background-color: antiquewhite;
 }
 
 /****************** 비주얼배너 ******************/
 .visual-banner {
-  position: relative;
   width: 100%;
-  height: 192rem;
+  height: 100vh;
   background-color: #1a71fe;
 }
 .visual-banner h2 {
   position: relative;
-  top: 50vh;
-  translate: 0 -50%;
+  top: 50%;
   text-align: center;
   color: #fff;
   font-size: 6vw;
   width: 80%;
   margin: 0 auto;
 }
+
+/****************** 카드박스 ******************/
 .card-banner {
-  position: absolute;
-  bottom: 0;
+  width: 100%;
+  height: 600px;
+  background-color: #333;
   left: 6.4rem;
 }
 .card-banner h3 {
   color: #fff;
-  font-size: 3.2rem;
-  margin-bottom: 1.6rem;
+  font-size: 3.2vw;
 }
-.card-banner ul {
-  width: 100%;
-  height: 48.0rem;
-}
-.card-banner ul li {
-  width: 28.3rem;
-  height: 48.0rem;
-  background-color: #f7c518;
-  border-radius: 2rem;
-}
-.card-banner ul li a {
-  width: 100%;
-  height: 100%;
-}
-
 
 /****************** 브랜드소개 ******************/
 section.brand-info {
