@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/*********************** font-family ***********************/
+/* Montserrat */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Barrio */
+@import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
+
+/*
+  font-family: "Montserrat", serif;
+  font-family: "Barrio", system-ui;
+*/
+
+:root {
+  /* color */
+  --background-color: #fef0e0;
+  --primary-color: #f9423a;
+  --white-color: #fff;
+}
+
+.wrap {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
