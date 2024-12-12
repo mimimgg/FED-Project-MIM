@@ -10,9 +10,7 @@ header {
   width: 100%;
   height: 9.4rem;
   background-color: var(--background-color);
-}
-.logo img {
-  width: 9.9rem;
+  border-bottom: 1px solid var(--primary-color);
 }
 nav {
   display: flex;
@@ -39,18 +37,66 @@ nav {
   text-transform: uppercase;
   color: var(--primary-color);
 }
-h1.logo {
+.logo {
   position: absolute;
   top: 28%;
   left: 50%;
+  transform: translateX(-50%);
+}
+.logo img {
+  width: 9.9rem;
 }
 /* //header */
 
 /* main */
 main {
-  height: 10000px;
-  background-color: aqua;
+  width: 100%;
 }
+.main-banner {
+  width: 100%;
+  height: 68rem;
+  background: url(../images/main-banner.jpg) no-repeat center top/cover;
+}
+.main-banner > div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.banner-text {
+  width: 65.6rem;
+  text-align: center;
+}
+/*********** 🔍 banner-title 공통 ***********/
+.banner-title {
+  font-size: 8.8rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: "Barrio", system-ui;
+}
+.banner-disc {
+  font-size: 3.2rem;
+  color: var(--primary-color);
+  font-family: "Titan One", sans-serif;
+}
+/*********** 🔍 //banner-title 공통 ***********/
+
+/*********** 🔍 click-button 공통 ***********/
+.click-button {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2.4rem;
+  padding: .8rem 8.8rem;
+  margin-top: 4rem;
+  background: var(--primary-color);
+  color: var(--background-color);
+  opacity: .9;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+.click-button:hover {
+  opacity: 1;
+}
+/*********** 🔍 //click-button 공통 ***********/
+
 /* section 01.main-banner */
 
 

@@ -3,13 +3,18 @@
 /*********************** font-family ***********************/
 /* Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
 /* Barrio */
 @import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
+/* Titan One */
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+/* Advent Pro */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*
   font-family: "Montserrat", serif;
   font-family: "Barrio", system-ui;
+  font-family: "Titan One", sans-serif;
+  font-family: "Advent Pro", sans-serif;
 */
 
 :root {
