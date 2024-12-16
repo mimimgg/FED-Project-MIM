@@ -9,12 +9,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
 /* Advent Pro */
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+/* Bangers */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
 /*
   font-family: "Montserrat", serif;
   font-family: "Barrio", system-ui;
   font-family: "Titan One", sans-serif;
   font-family: "Advent Pro", sans-serif;
+  font-family: "Bangers", system-ui;
 */
 
 :root {
@@ -26,6 +29,33 @@
 
 .wrap {
   max-width: 1440px;
+  height: 100%;
   margin: 0 auto;
   padding: 0 4rem;
 }
+
+/*************** 섹션별 상단 타이틀 ***************/
+h2 {
+  font-size: 8.8rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: "Barrio", system-ui;
+}
+
+/*************** 🔍 click-button 공통 ***************/
+.click-button {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2.4rem;
+  padding: .8rem 8.8rem;
+  margin-top: 4rem;
+  background: var(--primary-color);
+  color: var(--background-color);
+  opacity: .9;
+  transition: opacity .5s linear;
+  cursor: pointer;
+}
+.click-button:hover {
+  opacity: 1;
+}
+
+/*************** 🔍 //click-button 공통 ***************/

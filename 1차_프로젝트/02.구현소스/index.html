@@ -51,19 +51,310 @@
       </nav>
     </header>
     <main>
-
       <!-- 
       ❓Questions❓
       1. 백그라운드 이미지
-      2. 텍스트는 좌측 중앙 정렬
+      2. 텍스트는 좌측에 수평 중앙 정렬 (반을 나누는 것만이 방법인가?)
+      3. header 메뉴 씹힘 현상 (이거 어케하더라..)
       -->
       <section class="main-banner">
-        <div class="wrap">
-          <div class="banner-text">
-            <h2 class="banner-title">modern mexican soda</h2>
-            <span class="banner-disc">Celebrate the season with tepache</span>
+        <div class="wrap flex__vertical-center">
+          <div class="main-harf">
+            <div class="banner-text">
+              <h2>modern mexican soda</h2>
+              <span class="banner-disc">Celebrate the season with tepache</span>
+            </div>
+            <button class="click-button" onclick="location.href='#'">shop now</button>
           </div>
-          <button class="click-button" onclick="location.href='#'">shop now</button>
+        </div>
+      </section>
+
+      <!-- 
+      ❓Questions❓
+      1. marquee 하구싶당.. T^T
+      -->
+      <div class="product-marquee">
+        <div class="marquee-section">
+          <span>CERTIFIED ORGANIC</span>
+          <span>LOW IN SUGAR</span>
+          <span>LESS THAN 50 CALORIES</span>
+          <span>MODERN</span>
+        </div>
+      </div>
+
+      <!--
+      ❓Questions❓
+      1. 색을 다 다르게!?
+      2. 카드 레이아웃이 잘 잡힌건지?
+      3. 이미지는 항상 어려움..
+      4. collection-slide 왜 헤더 잡아먹지?
+      -->
+      <section class="flavors-collection">
+        <h2>shop flavors</h2>
+        <div class="collection-slide">
+          <div class="collection-card">
+            <ul>
+              <li class="collection-card-inner">
+                <div class="collection-card__header">new flavor !</div>
+                <div class="collection-card__center">
+                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
+                </div>
+                <div class="collection-card__body">
+                  <div class="collection-card__top">
+                    <h3>prickly pear</h3>
+                    <div class="collection-card__review">
+                      <div class="review-stars">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                      </div>
+                      <p>16 Reviews</p>
+                    </div>
+                    <div class="collection-card__disc">
+                      Sweet and Tart <br />
+                      Perfect Shade of Pink <br />
+                      delicately balanced
+                    </div>
+                  </div>
+                  <div class="collection-card__controls">
+                    <button class="cart-button">add to cart</button>
+                    <button class="list-button">shop now</button>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-card-inner">
+                <div class="collection-card__header">new flavor !</div>
+                <div class="collection-card__center">
+                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
+                </div>
+                <div class="collection-card__body">
+                  <div class="collection-card__top">
+                    <h3>prickly pear</h3>
+                    <div class="collection-card__review">
+                      <div class="review-stars">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                      </div>
+                      <p>16 Reviews</p>
+                    </div>
+                    <div class="collection-card__disc">
+                      Sweet and Tart <br />
+                      Perfect Shade of Pink <br />
+                      delicately balanced
+                    </div>
+                  </div>
+                  <div class="collection-card__controls">
+                    <button class="cart-button">add to cart</button>
+                    <button class="list-button">shop now</button>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-card-inner">
+                <div class="collection-card__header">new flavor !</div>
+                <div class="collection-card__center">
+                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
+                </div>
+                <div class="collection-card__body">
+                  <div class="collection-card__top">
+                    <h3>prickly pear</h3>
+                    <div class="collection-card__review">
+                      <div class="review-stars">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                      </div>
+                      <p>16 Reviews</p>
+                    </div>
+                    <div class="collection-card__disc">
+                      Sweet and Tart <br />
+                      Perfect Shade of Pink <br />
+                      delicately balanced
+                    </div>
+                  </div>
+                  <div class="collection-card__controls">
+                    <button class="cart-button">add to cart</button>
+                    <button class="list-button">shop now</button>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-card-inner">
+                <div class="collection-card__header">new flavor !</div>
+                <div class="collection-card__center">
+                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
+                </div>
+                <div class="collection-card__body">
+                  <div class="collection-card__top">
+                    <h3>prickly pear</h3>
+                    <div class="collection-card__review">
+                      <div class="review-stars">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                      </div>
+                      <p>16 Reviews</p>
+                    </div>
+                    <div class="collection-card__disc">
+                      Sweet and Tart <br />
+                      Perfect Shade of Pink <br />
+                      delicately balanced
+                    </div>
+                  </div>
+                  <div class="collection-card__controls">
+                    <button class="cart-button">add to cart</button>
+                    <button class="list-button">shop now</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+      ❓Questions❓
+      1. css에서 백그라운드 이미지 설정??
+      2. 과일들 왜저랭..
+      -->
+      <section class="banner-image">
+        <div class="home-banner">
+          <img class="home-page-left" src="./images/home-page-image-1.png" alt="오렌지" />
+          <img class="home-page-right" src="./images/home-page-image-2.png" alt="파인애플" />
+        </div>
+      </section>
+
+      <!-- 
+      ❓Questions❓
+      1. 위 collection-slide랑은 다르지만 비슷한 스타일인데 이런 건 어떻게 해야 현명할까?
+      -->
+      <section class="home-collection">
+        <div class="wrap">
+          <h2>shop variety packs</h2>
+          <div class="collection-list">
+            <ul>
+              <li class="collection-card-inner">
+                <div class="collection-card__header">new flavor !</div>
+                <div class="collection-card__center">
+                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
+                </div>
+                <div class="collection-card__body">
+                  <div class="collection-card__top">
+                    <h3>prickly pear</h3>
+                    <div class="collection-card__review">
+                      <div class="review-stars">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                      </div>
+                      <p>16 Reviews</p>
+                    </div>
+                    <div class="collection-card__disc">
+                      Sweet and Tart <br />
+                      Perfect Shade of Pink <br />
+                      delicately balanced
+                    </div>
+                  </div>
+                  <div class="collection-card__controls">
+                    <button class="cart-button">add to cart</button>
+                    <button class="list-button">shop now</button>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-card-inner">
+                <div class="collection-card__header">new flavor !</div>
+                <div class="collection-card__center">
+                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
+                </div>
+                <div class="collection-card__body">
+                  <div class="collection-card__top">
+                    <h3>prickly pear</h3>
+                    <div class="collection-card__review">
+                      <div class="review-stars">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>☆</span>
+                        <span>☆</span>
+                      </div>
+                      <p>16 Reviews</p>
+                    </div>
+                    <div class="collection-card__disc">
+                      Sweet and Tart <br />
+                      Perfect Shade of Pink <br />
+                      delicately balanced
+                    </div>
+                  </div>
+                  <div class="collection-card__controls">
+                    <button class="cart-button">add to cart</button>
+                    <button class="list-button">shop now</button>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 
+      ❓Questions❓
+      1. 브랜드 이미지를 ul > li로 주는 것이 맞는가...!!
+      2. 오렌지 안녕..?
+      -->
+      <section class="home-press">
+        <div class="wrap">
+          <h2>in the press</h2>
+          <div class="brand-name">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="./images/bevenet.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/nylon.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/buzzfeed.png" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/forbes.png" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <img class="sticker-orage" src="./images/orange.svg" alt="오렌지" />
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="wrap flex__vertical-center">
+          <div class="main-harf">
+            <h3>a modern mexican soda</h3>
+          </div>
+          <div class="about-right">
+            <div class="about-disc">
+              Finally, A lower sugar, lower calorie Mexican soda that delivers modern flavors with traditional
+              inspiration. TEPACHE IS A NATURALLY FERMENTED BEVERAGE MADE WITH PINEAPPLES, SPICES AND TROPICAL FRUITS.
+              WE’VE CRAFTED OUR RECIPES BY TAKING INSPIRATION FROM REGIONS THROUGHOUT MEXICO, CREATING DELICIOUSLY BOLD
+              COMBINATIONS.
+              <button class="cart-button">add to cart</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>

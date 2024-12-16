@@ -18,7 +18,8 @@ nav {
   align-items: center;
   height: 9.4rem;
 }
-.left-menu, .right-menu {
+.left-menu,
+.right-menu {
   display: flex;
   align-items: center;
   gap: 3.2rem;
@@ -52,52 +53,266 @@ nav {
 main {
   width: 100%;
 }
+/* // main */
+
+/* section 01.main-banner */
 .main-banner {
   width: 100%;
   height: 68rem;
   background: url(../images/main-banner.jpg) no-repeat center top/cover;
 }
-.main-banner > div {
+.flex__vertical-center {
   display: flex;
   align-items: center;
-  flex-direction: column;
 }
-.banner-text {
-  width: 65.6rem;
+.main-harf {
+  width: 50%;
   text-align: center;
 }
-/*********** 🔍 banner-title 공통 ***********/
-.banner-title {
-  font-size: 8.8rem;
-  color: var(--primary-color);
-  font-weight: bold;
-  font-family: "Barrio", system-ui;
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
 }
+
 .banner-disc {
   font-size: 3.2rem;
   color: var(--primary-color);
   font-family: "Titan One", sans-serif;
 }
-/*********** 🔍 //banner-title 공통 ***********/
+/* // section 01.main-banner */
 
-/*********** 🔍 click-button 공통 ***********/
-.click-button {
+/* section 02.product-marquee */
+.product-marquee {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}
+.marquee-section {
+  display: flex;
+}
+.marquee-section span {
+  font-size: 3.2rem;
+  font-family: "Barrio", system-ui;
+  padding: 4.8rem 5.6rem;
+  border: 1px solid var(--primary-color);
+}
+/* // section 02.product-marquee */
+
+/* section 03.flavors-collection */
+.flavors-collection {
+  width: 100%;
+  height: 96.8rem;
+  background-color: var(--background-color);
+}
+.flavors-collection h2 {
+  padding-top: 6.4rem;
+  text-align: center;
+}
+.collection-slide {
+  width: 100%;
+  height: 64.8rem;
+  margin: 4.8rem 0;
+  overflow: hidden;
+}
+.collection-card {
+  width: 37.6rem;
+  height: 64.8rem;
+}
+.collection-card ul {
+  display: flex;
+  gap: 3.2rem;
+}
+.collection-card-inner {
+  text-transform: uppercase;
+}
+.collection-card__header {
+  width: 100%;
+  height: 4rem;
+  padding: 0 2.4rem;
+  line-height: 4rem;
   font-family: "Advent Pro", sans-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  color: #ff4439;
+  background-color: #ffdd04;
+}
+.collection-card__center {
+  position: relative;
+  width: 100%;
+  height: 24rem;
+  aspect-ratio: 1.7;
+  overflow: hidden;
+}
+.collection-card__center img {
+  width: 100%;
+  position: absolute;
+  top: -50%;
+  transform: translateY(8%);
+}
+.collection-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 36.8rem;
+  padding: 1.6rem 2.4rem;
+  border: 2px solid #ff4439;
+  background-color: transparent;
+}
+.collection-card__top h3 {
+  padding-bottom: 1.6rem;
+  font-size: 4rem;
+  font-family: "Bangers", system-ui;
+  color: #ff4439;
+}
+.collection-card__review {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  padding-bottom: 2rem;
+}
+.review-stars {
+  display: flex;
+  gap: 0.4rem;
+  font-size: 1.6rem;
+  color: #ff4439;
+}
+.collection-card__review > p {
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  color: #ff4439;
+  font-family: "Advent Pro", sans-serif;
+  text-transform: none;
+}
+.collection-card__disc {
+  font-family: "Advent Pro", sans-serif;
+  font-size: 1.6rem;
+  color: #ff4439;
+  line-height: 2rem;
+}
+.collection-card__controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.collection-card__controls > button {
+  font-family: "Advent Pro", sans-serif;
+  text-transform: uppercase;
   font-size: 2.4rem;
-  padding: .8rem 8.8rem;
-  margin-top: 4rem;
-  background: var(--primary-color);
-  color: var(--background-color);
-  opacity: .9;
-  transition: opacity .5s linear;
+  padding: 0.8rem 8.8rem;
+  transition: opacity 0.5s linear;
   cursor: pointer;
 }
-.click-button:hover {
+.cart-button {
+  background: #ff4439;
+  color: var(--background-color);
+  opacity: 0.9;
+}
+.cart-button:hover {
   opacity: 1;
 }
-/*********** 🔍 //click-button 공통 ***********/
+.list-button {
+  border: 2px solid #ff4439;
+  background-color: transparent;
+  color: #ff4439;
+  opacity: 0.9;
+}
+/* section // 03.flavors-collection */
 
-/* section 01.main-banner */
+/* section 04.banner-image */
+.banner-image {
+  width: 100%;
+  height: 54.4rem;
+  background: url(../images/total-product.jpg) no-repeat 100%/100%;
+}
+.home-banner {
+  position: relative;
+}
+.home-page-left {
+  position: absolute;
+  width: 20%;
+  top: -11rem;
+  left: -16rem;
+}
+.home-page-right {
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+}
+/* section //04.banner-image */
 
+/* section 05.home-collection */
+.home-collection {
+  width: 100%;
+  height: 97.8rem;
+  background-color: #cbde82;
+}
+.home-collection h2 {
+  padding-top: 6.4rem;
+  text-align: center;
+}
+.collection-list {
+  margin: 4.8rem 0;
+}
+.collection-list > ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+/* section //05.home-collection */
+
+/* section 06.home-press */
+.home-press {
+  width: 100%;
+  height: 46rem;
+  background-color: var(--background-color);
+}
+.home-press h2 {
+  padding-top: 6.4rem;
+  text-align: center;
+}
+.brand-name {
+  margin-top: 8.8rem;
+}
+.brand-name > ul {
+  display: flex;
+  justify-content: space-between;
+}
+/* section //06.home-press */
+
+/* section 07.about */
+.about {
+  width: 100%;
+  height: 46rem;
+  background-color: var(--primary-color);
+}
+.about h3 {
+  font-size: 8.8rem;
+  color: var(--background-color);
+  font-weight: bold;
+  font-family: "Barrio", system-ui;
+}
+.about-left {
+  width: 50%;
+}
+.about-right {
+  width: 50%;
+}
+.about-disc {
+  width: 48.6rem;
+  text-align: center;
+  margin: 0 auto;
+  font-family: "Montserrat", serif;
+  font-size: 1.6rem;
+  color: var(--background-color);
+  line-height: 2rem;
+}
+
+
+
+/* section // 07.about */
 
 /* //main */
+
+/* footer */
