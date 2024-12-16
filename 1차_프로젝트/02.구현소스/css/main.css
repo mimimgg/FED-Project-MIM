@@ -270,15 +270,15 @@ main {
 } */
 .home-page-left {
   position: absolute;
-  width: 20%;
-  top: 0;
-  left: 0;
+  width: 15%;
+  top: -20%;
+  left: -7%;
 }
 .home-page-right {
   position: absolute;
-  width: 20%;
-  bottom: 0;
-  right: 0;
+  width: 15%;
+  bottom: -16%;
+  right: -5%;
 }
 /* section //04.banner-image */
 
