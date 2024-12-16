@@ -7,6 +7,8 @@
 /* header */
 header {
   position: fixed;
+  z-index: 9999;
+  top: 0;
   width: 100%;
   height: 9.4rem;
   background-color: var(--background-color);
@@ -24,6 +26,10 @@ nav {
   align-items: center;
   gap: 3.2rem;
 }
+
+.right-menu {
+  justify-content: flex-end;
+}
 .left-menu a {
   font-size: 1.6rem;
   font-weight: bold;
@@ -39,10 +45,11 @@ nav {
   color: var(--primary-color);
 }
 .logo {
-  position: absolute;
+  text-align: center;
+  /* position: absolute;
   top: 28%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 .logo img {
   width: 9.9rem;
@@ -57,9 +64,11 @@ main {
 
 /* section 01.main-banner */
 .main-banner {
+  position: relative;
   width: 100%;
-  height: 68rem;
-  background: url(../images/main-banner.jpg) no-repeat center top/cover;
+  aspect-ratio: 2.5;
+  background: url(../images/main-banner.jpg) no-repeat center top / 142%;
+  margin-bottom: 7vw;
 }
 .flex__vertical-center {
   display: flex;
@@ -68,6 +77,9 @@ main {
 .main-harf {
   width: 50%;
   text-align: center;
+  transform-origin: left top;
+  rotate: -3deg;
+  translate: 0 -27px;
 }
 .banner-text {
   display: flex;
@@ -76,25 +88,52 @@ main {
 }
 
 .banner-disc {
-  font-size: 3.2rem;
+  font-size: min(3.2rem,2vw);
   color: var(--primary-color);
   font-family: "Titan One", sans-serif;
 }
 /* // section 01.main-banner */
 
 /* section 02.product-marquee */
+/* 히든박스 */
 .product-marquee {
-  background-color: var(--background-color);
+  position: absolute;
+  width: 100%;
+  top: 119%;
   color: var(--primary-color);
+  translate: 0 -300px;
+  overflow: hidden;
+}
+/* 회전박스 */
+.rot-box{
+  transform-origin: left top;
+  rotate: -3deg;
+  translate: 0 -27px;
+}
+/* 움직이는박스 */
+.moving-box{
+  display: flex;
+  padding-top: 200px;
+  translate: -1348px;
+  animation: move-txt-ani 10s linear infinite;
+}
+@keyframes move-txt-ani {
+  to{
+    translate: calc(1348px*-2);
+  }
 }
 .marquee-section {
   display: flex;
+  flex-shrink: 0;
+  width: 1348px;
+  background-color: var(--background-color);
 }
 .marquee-section span {
   font-size: 3.2rem;
   font-family: "Barrio", system-ui;
   padding: 4.8rem 5.6rem;
   border: 1px solid var(--primary-color);
+  white-space: nowrap;
 }
 /* // section 02.product-marquee */
 
@@ -221,23 +260,25 @@ main {
 
 /* section 04.banner-image */
 .banner-image {
+  position: relative;
   width: 100%;
   height: 54.4rem;
   background: url(../images/total-product.jpg) no-repeat 100%/100%;
 }
-.home-banner {
+/* .home-banner {
   position: relative;
-}
+} */
 .home-page-left {
   position: absolute;
   width: 20%;
-  top: -11rem;
-  left: -16rem;
+  top: 0;
+  left: 0;
 }
 .home-page-right {
   position: absolute;
   width: 20%;
   bottom: 0;
+  right: 0;
 }
 /* section //04.banner-image */
 
@@ -308,8 +349,6 @@ main {
   color: var(--background-color);
   line-height: 2rem;
 }
-
-
 
 /* section // 07.about */
 

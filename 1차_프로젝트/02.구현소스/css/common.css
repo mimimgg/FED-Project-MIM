@@ -26,17 +26,23 @@
   --primary-color: #f9423a;
   --white-color: #fff;
 }
-
+body{
+  padding-top: 95px;
+  background-color: var(--background-color);
+}
 .wrap {
   max-width: 1440px;
   height: 100%;
   margin: 0 auto;
   padding: 0 4rem;
 }
+nav.wrap>div{
+  flex: 1;
+}
 
 /*************** 섹션별 상단 타이틀 ***************/
 h2 {
-  font-size: 8.8rem;
+  font-size: min(8.8rem,5vw);
   color: var(--primary-color);
   font-weight: bold;
   font-family: "Barrio", system-ui;
@@ -45,7 +51,7 @@ h2 {
 /*************** 🔍 click-button 공통 ***************/
 .click-button {
   font-family: "Advent Pro", sans-serif;
-  font-size: 2.4rem;
+  font-size: min(2.4rem,2vw);
   padding: .8rem 8.8rem;
   margin-top: 4rem;
   background: var(--primary-color);
