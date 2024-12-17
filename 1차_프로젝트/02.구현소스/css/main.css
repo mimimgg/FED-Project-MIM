@@ -4,16 +4,17 @@
 @import url(./reset.css);
 @import url(./common.css);
 
-/* header */
+/*************** header ***************/
 header {
   position: fixed;
-  z-index: 9999;
+  z-index: 2;
   top: 0;
   width: 100%;
   height: 9.4rem;
   background-color: var(--background-color);
-  border-bottom: 1px solid var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
+/*************** nav ***************/
 nav {
   display: flex;
   justify-content: space-between;
@@ -26,23 +27,16 @@ nav {
   align-items: center;
   gap: 3.2rem;
 }
-
-.right-menu {
-  justify-content: flex-end;
-}
-.left-menu a {
-  font-size: 1.6rem;
-  font-weight: bold;
-  font-family: "Montserrat", serif;
-  text-transform: uppercase;
-  color: var(--primary-color);
-}
+.left-menu a,
 .right-menu a {
   font-size: 1.6rem;
   font-weight: bold;
   font-family: "Montserrat", serif;
   text-transform: uppercase;
   color: var(--primary-color);
+}
+.right-menu {
+  justify-content: flex-end;
 }
 .logo {
   text-align: center;
@@ -54,88 +48,86 @@ nav {
 .logo img {
   width: 9.9rem;
 }
-/* //header */
+/*************** //header ***************/
 
-/* main */
+/*************** main ***************/
 main {
   width: 100%;
 }
-/* // main */
-
-/* section 01.main-banner */
-.main-banner {
+/*************** visual-banner ***************/
+.visual-banner {
   position: relative;
   width: 100%;
-  aspect-ratio: 2.5;
-  background: url(../images/main-banner.jpg) no-repeat center top / 142%;
-  margin-bottom: 7vw;
+  aspect-ratio: 16 / 8;
+  background: url(../images/main-banner.jpg) no-repeat center top / cover;
 }
-.flex__vertical-center {
-  display: flex;
-  align-items: center;
-}
-.main-harf {
-  width: 50%;
+.visual-text-box {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
   text-align: center;
-  transform-origin: left top;
-  rotate: -3deg;
-  translate: 0 -27px;
 }
-.banner-text {
+.visual-text-box h2 {
   display: flex;
   flex-direction: column;
-  gap: 1.6rem;
+  text-align: center;
+  font-size: min(12.8rem, 8vw);
+  color: var(--primary-color);
+  font-weight: bold;
+  font-family: "Barrio", system-ui;
 }
-
-.banner-disc {
-  font-size: min(3.2rem,2vw);
+.visual-disc {
+  font-size: min(3.2rem, 2.5vw);
   color: var(--primary-color);
   font-family: "Titan One", sans-serif;
+  margin-bottom: 4rem;
 }
-/* // section 01.main-banner */
 
-/* section 02.product-marquee */
-/* 히든박스 */
+/*************** //visual-banner ***************/
+
+/*************** product-marquee ***************/
 .product-marquee {
-  position: absolute;
-  width: 100%;
-  top: 119%;
-  color: var(--primary-color);
-  translate: 0 -300px;
-  overflow: hidden;
+  position: relative;
+  margin-top: -50px;
+  transform: rotate(-2deg);
 }
-/* 회전박스 */
-.rot-box{
-  transform-origin: left top;
-  rotate: -3deg;
-  translate: 0 -27px;
-}
-/* 움직이는박스 */
-.moving-box{
+.marquee-wrap {
   display: flex;
-  padding-top: 200px;
-  translate: -1348px;
-  animation: move-txt-ani 10s linear infinite;
+  overflow: hidden;
+  
+}
+.marquee-box {
+  display: flex;
+  background-color: var(--background-color);
+  border-bottom: 2px solid var(--primary-color);
+  animation: move-txt-ani 8s linear infinite;
 }
 @keyframes move-txt-ani {
-  to{
-    translate: calc(1348px*-2);
+  0% {
+    /* left: 100%; */
+    transform: translateX(0%);
+  }
+  100% {
+    /* left: -100%; */
+    transform: translateX(-100%);
   }
 }
-.marquee-section {
-  display: flex;
-  flex-shrink: 0;
-  width: 1348px;
-  background-color: var(--background-color);
-}
-.marquee-section span {
-  font-size: 3.2rem;
-  font-family: "Barrio", system-ui;
-  padding: 4.8rem 5.6rem;
-  border: 1px solid var(--primary-color);
+.marquee-box span {
+  padding: 4rem 4.8rem;
+  border-right: 2px solid var(--primary-color);
   white-space: nowrap;
+  color: var(--primary-color);
 }
-/* // section 02.product-marquee */
+.marquee-box span:nth-child(odd) {
+  font-size: 4.8rem;
+  font-family: "Barrio", system-ui;
+}
+.marquee-box span:nth-child(even) {
+  font-size: 3.2rem;
+  font-family: "Titan One", system-ui;
+  line-height: 5.2rem;
+}
+/*************** //product-marquee ***************/
 
 /* section 03.flavors-collection */
 .flavors-collection {
@@ -355,3 +347,112 @@ main {
 /* //main */
 
 /* footer */
+
+.slider {
+}
+.slider-wrappr {
+  display: flex;
+  gap: 3.2rem;
+}
+.card-padding {
+  padding: 0 2.4rem;
+}
+.card {
+  max-width: 376px;
+  width: 100%;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.card-top {
+  width: 100%;
+  height: 40px;
+  background-color: #ffdd04;
+}
+.card-top-title {
+  font-size: 1.6rem;
+  line-height: 40px;
+  font-family: "Advent Pro";
+  color: #e1248f;
+  font-weight: bold;
+}
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  overflow: hidden;
+}
+.card-image img {
+  position: absolute;
+  width: 100%;
+  top: -30%;
+}
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 368px;
+  padding: 16px 0;
+  border: 2px solid #e1248f;
+}
+.card-bottom h4 {
+  font-family: "Bangers";
+  font-size: 4rem;
+  color: #e1248f;
+}
+.card-review {
+  display: flex;
+  gap: 16px;
+  font-size: 1.6rem;
+  color: #e1248f;
+  font-family: "Advent Pro";
+  text-transform: capitalize;
+  margin: 16px 0;
+}
+.card-review > ul {
+  display: flex;
+  gap: 4px;
+}
+.card-disc {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 1.6rem;
+  font-family: "Advent Pro";
+  color: #e1248f;
+  text-transform: capitalize;
+}
+.card-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.card-btn button {
+  text-transform: uppercase;
+  font-family: "Advent Pro";
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding: 0.8rem 2.4rem;
+  transition: 0.3s;
+}
+.primary-btn {
+  background-color: #e1248f;
+  color: #fff;
+}
+.primary-btn:hover {
+  background-color: #d1137a; /* 어두운 색상으로 변경 */
+  cursor: pointer;
+}
+.secondary-btn {
+  border: 2px solid #e1248f;
+  color: #e1248f;
+  background-color: var(--background-color);
+}
+.secondary-btn:hover {
+  border: 2px solid #e1248f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109); /* 그림자 효과 */
+  cursor: pointer;
+}
+
+/*************** // main ***************/

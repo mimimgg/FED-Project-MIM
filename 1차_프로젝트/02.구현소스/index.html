@@ -3,11 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      TEPACHE: A Modern Mexican Soda made from fresh pineapples! – De La Calle -
-      Tepache
-    </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>TEPACHE: A Modern Mexican Soda made from fresh pineapples! – De La Calle - Tepache</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
@@ -16,6 +14,12 @@
     1. left, right 메뉴는 space-between해서 양쪽배치
     2. 로고는 정중앙 배치
     3. 메뉴 옆 드롭다운 화살표는 svg 하고싶은디?
+
+    ❗️solution❗️
+    1. 좌, 중, 우 배치할 태그를 nav>div로 감싼다.
+    2. 부모요소 nav에 display: flex; 부여
+    3. 자식요소 고르게 등분할 flex: 1;
+    4. fontawesome CDN 연결 후 화살표 삽입
     -->
     <header>
       <nav class="wrap">
@@ -59,57 +63,24 @@
         </div>
       </nav>
     </header>
+
     <main>
       <!-- 
       ❓Questions❓
       1. 백그라운드 이미지
       2. 텍스트는 좌측에 수평 중앙 정렬 (반을 나누는 것만이 방법인가?)
       3. header 메뉴 씹힘 현상 (이거 어케하더라..)
-      -->
-      <section class="main-banner">
-        <div class="wrap flex__vertical-center">
-          <div class="main-harf">
-            <div class="banner-text">
-              <h2>
-                modern <br />
-                mexican soda
-              </h2>
-              <span class="banner-disc">Celebrate the season with tepache</span>
-            </div>
-            <button class="click-button" onclick="location.href='#'">
-              shop now
-            </button>
-          </div>
-        </div>
 
-        <div class="product-marquee">
-          <div class="rot-box">
-            <div class="moving-box">
-              <div class="marquee-section">
-                <span>CERTIFIED ORGANIC</span>
-                <span>LOW IN SUGAR</span>
-                <span>LESS THAN 50 CALORIES</span>
-                <span>MODERN</span>
-              </div>
-              <div class="marquee-section">
-                <span>CERTIFIED ORGANIC</span>
-                <span>LOW IN SUGAR</span>
-                <span>LESS THAN 50 CALORIES</span>
-                <span>MODERN</span>
-              </div>
-              <div class="marquee-section">
-                <span>CERTIFIED ORGANIC</span>
-                <span>LOW IN SUGAR</span>
-                <span>LESS THAN 50 CALORIES</span>
-                <span>MODERN</span>
-              </div>
-              <div class="marquee-section">
-                <span>CERTIFIED ORGANIC</span>
-                <span>LOW IN SUGAR</span>
-                <span>LESS THAN 50 CALORIES</span>
-                <span>MODERN</span>
-              </div>
-            </div>
+      ❗️solution❗️
+      1. 백그라운드 이미지 깔기 (추후 슬라이드 배너로 변경 가능성 농후함)
+      2. 텍스트 배치 앱솔루트로 코드 간결화
+      -->
+      <section class="visual-banner">
+        <div class="wrap">
+          <div class="visual-text-box">
+            <h2><span>modern </span><span>mexican soda</span></h2>
+            <p class="visual-disc">Celebrate the season with tepache</p>
+            <button class="click-button" onclick="location.href='#'">shop now</button>
           </div>
         </div>
       </section>
@@ -117,7 +88,28 @@
       <!-- 
       ❓Questions❓
       1. marquee 하구싶당.. T^T
+      2. 튄다!! 왜 튀냐!!
+
+      ❗️solution❗️
+      1. 고정된 겉박스
+      2. 흘러갈 박스
       -->
+      <div class="product-marquee">
+        <div class="marquee-wrap">
+          <div class="marquee-box">
+            <span>CERTIFIED ORGANIC</span>
+            <span>LOW IN SUGAR</span>
+            <span>LESS THAN 50 CALORIES</span>
+            <span>MODERN</span>
+          </div>
+          <div class="marquee-box">
+            <span>CERTIFIED ORGANIC</span>
+            <span>LOW IN SUGAR</span>
+            <span>LESS THAN 50 CALORIES</span>
+            <span>MODERN</span>
+          </div>
+        </div>
+      </div>
 
       <!--
       ❓Questions❓
@@ -126,42 +118,261 @@
       3. 이미지는 항상 어려움..
       4. collection-slide 왜 헤더 잡아먹지?
       -->
-      <section class="flavors-collection">
+      <section class="slider">
+        <div class="slider-wrappr padding-spacing">
+          <!-- 카드1 -->
+          <article class="card">
+            <div class="card-top card-padding">
+              <span class="card-top-title">new flavor !</span>
+            </div>
+            <div class="card-image">
+              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-box card-padding">
+                <h4>ginger manzana</h4>
+                <ul class="card-review">
+                  <li class="review-star">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                  </li>
+                  <ul>
+                    <li class="review-number">17</li>
+                    <li class="review-txt">review</li>
+                  </ul>
+                </ul>
+                <ul class="card-disc">
+                  <li>Sweet and Tart</li>
+                  <li>Perfect Shade of Pink</li>
+                  <li>delicately balanced</li>
+                </ul>
+              </div>
+              <div class="card-btn card-padding">
+                <button class="primary-btn" aria-label="주요 버튼">add to cart</button>
+                <button class="secondary-btn" aria-label="보조 버튼">shop now</button>
+              </div>
+            </div>
+          </article>
+          <!-- 카드2 -->
+          <article class="card">
+            <div class="card-top card-padding">
+              <span class="card-top-title">new flavor !</span>
+            </div>
+            <div class="card-image">
+              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-box card-padding">
+                <h4>ginger manzana</h4>
+                <ul class="card-review">
+                  <li class="review-star">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                  </li>
+                  <ul>
+                    <li class="review-number">17</li>
+                    <li class="review-txt">review</li>
+                  </ul>
+                </ul>
+                <ul class="card-disc">
+                  <li>Sweet and Tart</li>
+                  <li>Perfect Shade of Pink</li>
+                  <li>delicately balanced</li>
+                </ul>
+              </div>
+              <div class="card-btn card-padding">
+                <button class="primary-btn" aria-label="주요 버튼">add to cart</button>
+                <button class="secondary-btn" aria-label="보조 버튼">shop now</button>
+              </div>
+            </div>
+          </article>
+          <!-- 카드3 -->
+          <article class="card">
+            <div class="card-top card-padding">
+              <span class="card-top-title">new flavor !</span>
+            </div>
+            <div class="card-image">
+              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-box card-padding">
+                <h4>ginger manzana</h4>
+                <ul class="card-review">
+                  <li class="review-star">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                  </li>
+                  <ul>
+                    <li class="review-number">17</li>
+                    <li class="review-txt">review</li>
+                  </ul>
+                </ul>
+                <ul class="card-disc">
+                  <li>Sweet and Tart</li>
+                  <li>Perfect Shade of Pink</li>
+                  <li>delicately balanced</li>
+                </ul>
+              </div>
+              <div class="card-btn card-padding">
+                <button class="primary-btn" aria-label="주요 버튼">add to cart</button>
+                <button class="secondary-btn" aria-label="보조 버튼">shop now</button>
+              </div>
+            </div>
+          </article>
+          <!-- 카드4 -->
+          <article class="card">
+            <div class="card-top card-padding">
+              <span class="card-top-title">new flavor !</span>
+            </div>
+            <div class="card-image">
+              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-box card-padding">
+                <h4>ginger manzana</h4>
+                <ul class="card-review">
+                  <li class="review-star">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                  </li>
+                  <ul>
+                    <li class="review-number">17</li>
+                    <li class="review-txt">review</li>
+                  </ul>
+                </ul>
+                <ul class="card-disc">
+                  <li>Sweet and Tart</li>
+                  <li>Perfect Shade of Pink</li>
+                  <li>delicately balanced</li>
+                </ul>
+              </div>
+              <div class="card-btn card-padding">
+                <button class="primary-btn" aria-label="주요 버튼">add to cart</button>
+                <button class="secondary-btn" aria-label="보조 버튼">shop now</button>
+              </div>
+            </div>
+          </article>
+          <!-- 카드5 -->
+          <article class="card">
+            <div class="card-top card-padding">
+              <span class="card-top-title">new flavor !</span>
+            </div>
+            <div class="card-image">
+              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-box card-padding">
+                <h4>ginger manzana</h4>
+                <ul class="card-review">
+                  <li class="review-star">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                  </li>
+                  <ul>
+                    <li class="review-number">17</li>
+                    <li class="review-txt">review</li>
+                  </ul>
+                </ul>
+                <ul class="card-disc">
+                  <li>Sweet and Tart</li>
+                  <li>Perfect Shade of Pink</li>
+                  <li>delicately balanced</li>
+                </ul>
+              </div>
+              <div class="card-btn card-padding">
+                <button class="primary-btn" aria-label="주요 버튼">add to cart</button>
+                <button class="secondary-btn" aria-label="보조 버튼">shop now</button>
+              </div>
+            </div>
+          </article>
+          <!-- 카드6 -->
+          <article class="card">
+            <div class="card-top card-padding">
+              <span class="card-top-title">new flavor !</span>
+            </div>
+            <div class="card-image">
+              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-box card-padding">
+                <h4>ginger manzana</h4>
+                <ul class="card-review">
+                  <li class="review-star">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                  </li>
+                  <ul>
+                    <li class="review-number">17</li>
+                    <li class="review-txt">review</li>
+                  </ul>
+                </ul>
+                <ul class="card-disc">
+                  <li>Sweet and Tart</li>
+                  <li>Perfect Shade of Pink</li>
+                  <li>delicately balanced</li>
+                </ul>
+              </div>
+              <div class="card-btn card-padding">
+                <button class="primary-btn" aria-label="주요 버튼">add to cart</button>
+                <button class="secondary-btn" aria-label="보조 버튼">shop now</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- <section class="flavors-collection">
         <h2>shop flavors</h2>
         <div class="collection-slide">
           <div class="collection-card">
             <ul>
               <li class="collection-card-inner">
-                <article class="coll-box">
-                  <div class="collection-card__header">new flavor !</div>
-                  <div class="collection-card__center">
-                    <img src="./images/card-img01.jpg" alt="음맛있엉" />
-                  </div>
-                  <div class="collection-card__body">
-                    <div class="collection-card__top">
-                      <h3>prickly pear</h3>
-                      <div class="collection-card__review">
-                        <div class="review-stars">
-                          <span>★</span>
-                          <span>★</span>
-                          <span>★</span>
-                          <span>☆</span>
-                          <span>☆</span>
-                        </div>
-                        <p>16 Reviews</p>
+                <div class="collection-card__header">new flavor !</div>
+                <div class="collection-card__center">
+                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
+                </div>
+                <div class="collection-card__body">
+                  <div class="collection-card__top">
+                    <h3>prickly pear</h3>
+                    <div class="collection-card__review">
+                      <div class="review-stars">
+                        <span>★</span>
+                        <span>★</span>
+                        <span>★</span>
+                        <span>☆</span>
+                        <span>☆</span>
                       </div>
-                      <div class="collection-card__disc">
-                        Sweet and Tart <br />
-                        Perfect Shade of Pink <br />
-                        delicately balanced
-                      </div>
+                      <p>16 Reviews</p>
                     </div>
-                    <div class="collection-card__controls">
-                      <button class="cart-button">add to cart</button>
-                      <button class="list-button">shop now</button>
+                    <div class="collection-card__disc">
+                      Sweet and Tart <br />
+                      Perfect Shade of Pink <br />
+                      delicately balanced
                     </div>
                   </div>
-                </article>
+                  <div class="collection-card__controls">
+                    <button class="cart-button">add to cart</button>
+                    <button class="list-button">shop now</button>
+                  </div>
+                </div>
               </li>
               <li class="collection-card-inner">
                 <div class="collection-card__header">new flavor !</div>
@@ -256,7 +467,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- 
       ❓Questions❓
@@ -265,16 +476,8 @@
       -->
       <section class="banner-image">
         <div class="home-banner">
-          <img
-            class="home-page-left"
-            src="./images/home-page-image-1.png"
-            alt="오렌지"
-          />
-          <img
-            class="home-page-right"
-            src="./images/home-page-image-2.png"
-            alt="파인애플"
-          />
+          <img class="home-page-left" src="./images/home-page-image-1.png" alt="오렌지" />
+          <img class="home-page-right" src="./images/home-page-image-2.png" alt="파인애플" />
         </div>
       </section>
 
@@ -395,11 +598,9 @@
           </div>
           <div class="about-right">
             <div class="about-disc">
-              Finally, A lower sugar, lower calorie Mexican soda that delivers
-              modern flavors with traditional inspiration. TEPACHE IS A
-              NATURALLY FERMENTED BEVERAGE MADE WITH PINEAPPLES, SPICES AND
-              TROPICAL FRUITS. WE’VE CRAFTED OUR RECIPES BY TAKING INSPIRATION
-              FROM REGIONS THROUGHOUT MEXICO, CREATING DELICIOUSLY BOLD
+              Finally, A lower sugar, lower calorie Mexican soda that delivers modern flavors with traditional
+              inspiration. TEPACHE IS A NATURALLY FERMENTED BEVERAGE MADE WITH PINEAPPLES, SPICES AND TROPICAL FRUITS.
+              WE’VE CRAFTED OUR RECIPES BY TAKING INSPIRATION FROM REGIONS THROUGHOUT MEXICO, CREATING DELICIOUSLY BOLD
               COMBINATIONS.
               <button class="cart-button">add to cart</button>
             </div>

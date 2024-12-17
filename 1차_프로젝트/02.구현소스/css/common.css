@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*********************** font-family ***********************/
+/*********************** font-family CDN ***********************/
 /* Montserrat */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 /* Barrio */
@@ -25,6 +25,7 @@
   --background-color: #fef0e0;
   --primary-color: #f9423a;
   --white-color: #fff;
+  
 }
 body{
   padding-top: 95px;
@@ -36,29 +37,23 @@ body{
   margin: 0 auto;
   padding: 0 4rem;
 }
-nav.wrap>div{
-  flex: 1;
+.padding-spacing {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
-/*************** 섹션별 상단 타이틀 ***************/
-h2 {
-  font-size: min(8.8rem,5vw);
-  color: var(--primary-color);
-  font-weight: bold;
-  font-family: "Barrio", system-ui;
-}
 
 /*************** 🔍 click-button 공통 ***************/
 .click-button {
   font-family: "Advent Pro", sans-serif;
   font-size: min(2.4rem,2vw);
   padding: .8rem 8.8rem;
-  margin-top: 4rem;
   background: var(--primary-color);
   color: var(--background-color);
   opacity: .9;
   transition: opacity .5s linear;
   cursor: pointer;
+  text-transform: uppercase;
 }
 .click-button:hover {
   opacity: 1;
