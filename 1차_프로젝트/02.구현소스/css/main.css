@@ -60,6 +60,7 @@ main {
   width: 100%;
   aspect-ratio: 16 / 8;
   background: url(../images/main-banner.jpg) no-repeat center top / cover;
+  overflow: hidden;
 }
 .visual-text-box {
   position: absolute;
@@ -85,11 +86,19 @@ main {
 
 /*************** //visual-banner ***************/
 
+
 /*************** product-marquee ***************/
 .product-marquee {
-  position: relative;
-  margin-top: -50px;
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 10%;
+  z-index: 1;
+}
+.marquee-rotate {
   transform: rotate(-2deg);
+  translate: 0 19%;
+  width: 110%;
 }
 .marquee-wrap {
   display: flex;
@@ -100,7 +109,7 @@ main {
   display: flex;
   background-color: var(--background-color);
   border-bottom: 2px solid var(--primary-color);
-  animation: move-txt-ani 8s linear infinite;
+  animation: move-txt-ani 20s linear infinite;
 }
 @keyframes move-txt-ani {
   0% {
