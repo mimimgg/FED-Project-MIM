@@ -60,7 +60,6 @@ main {
   width: 100%;
   aspect-ratio: 16 / 8;
   background: url(../images/main-banner.jpg) no-repeat center top / cover;
-  overflow: hidden;
 }
 .visual-text-box {
   position: absolute;
@@ -86,30 +85,16 @@ main {
 
 /*************** //visual-banner ***************/
 
-
 /*************** product-marquee ***************/
 .product-marquee {
-  width: 100%;
-  height: 200px;
-  position: absolute;
-  bottom: 20%;
-  z-index: 1;
-}
-.marquee-rotate {
-  transform: rotate(-1deg);
-  translate: 0 19%;
-  width: 110%;
+  position: relative;
+  margin-top: -50px;
+  transform: rotate(-2deg);
 }
 .marquee-wrap {
   display: flex;
   overflow: hidden;
   
-}
-.marquee-box {
-  display: flex;
-  background-color: var(--background-color);
-  border-bottom: 2px solid var(--primary-color);
-  animation: move-txt-ani 20s linear infinite;
 }
 @keyframes move-txt-ani {
   0% {
@@ -120,6 +105,12 @@ main {
     /* left: -100%; */
     transform: translateX(-100%);
   }
+}
+.marquee-box {
+  display: flex;
+  background-color: var(--background-color);
+  border-bottom: 2px solid var(--primary-color);
+  animation: move-txt-ani 25s linear infinite;
 }
 .marquee-box span {
   padding: 4rem 4.8rem;
