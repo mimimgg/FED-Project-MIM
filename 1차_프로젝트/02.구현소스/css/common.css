@@ -46,7 +46,12 @@ h2 {
   color: var(--primary-color);
   font-weight: bold;
   font-family: "Barrio", system-ui;
+  text-align: center;
 }
+
+/*************** 텍스트 회전 각도 ***************/
+.rotate-right {rotate: -4deg;}
+.rotate-left {rotate: 4deg;}
 
 /*************** 🔍 click-button 공통 ***************/
 .click-button {

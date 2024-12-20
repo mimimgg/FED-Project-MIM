@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
+    <!-------------------------- header -------------------------->
     <!-- 
     ❓Questions❓
     1. left, right 메뉴는 space-between해서 양쪽배치
@@ -22,6 +23,7 @@
     4. fontawesome CDN 연결 후 화살표 삽입
     -->
     <header>
+      <!-------------------------- nav -------------------------->
       <nav class="wrap">
         <div>
           <ul class="left-menu">
@@ -62,9 +64,13 @@
           </ul>
         </div>
       </nav>
+      <!-------------------------- //nav -------------------------->
     </header>
+    <!-------------------------- //header -------------------------->
 
+    <!-------------------------- main -------------------------->
     <main>
+      <!-------------------------- visual banner -------------------------->
       <!-- 
       ❓Questions❓
       1. 백그라운드 이미지
@@ -84,7 +90,9 @@
           </div>
         </div>
       </section>
+      <!-------------------------- //visual banner -------------------------->
 
+      <!-------------------------- marquee -------------------------->
       <!-- 
       ❓Questions❓
       1. marquee 하구싶당.. T^T
@@ -110,16 +118,21 @@
           </div>
         </div>
       </div>
+      <!-------------------------- //marquee -------------------------->
 
+      <!-------------------------- flavors slide -------------------------->
       <!--
       ❓Questions❓
       1. 색을 다 다르게!?
       2. 카드 레이아웃이 잘 잡힌건지?
-      3. 이미지는 항상 어려움..
-      4. collection-slide 왜 헤더 잡아먹지?
+
+      ❗️solution❗️
+      1. slider-box : width: 100%
+      2. slider-wrap : 플렉스로 나열 / overflow: hidden
       -->
-      <section class="slider">
-        <div class="slider-wrappr padding-spacing">
+      <section class="slider-box">
+        <h2 class="rotate-right">shop flavors</h2>
+        <div class="slider-wrap">
           <!-- 카드1 -->
           <article class="card">
             <div class="card-top card-padding">
@@ -139,10 +152,10 @@
                     <span class="star">&#9733;</span>
                     <span class="star">&#9734;</span>
                   </li>
-                  <ul>
-                    <li class="review-number">17</li>
-                    <li class="review-txt">review</li>
-                  </ul>
+                  <li class="review-number">
+                    <span>17</span>
+                    <span>review</span>
+                  </li>
                 </ul>
                 <ul class="card-disc">
                   <li>Sweet and Tart</li>
@@ -162,7 +175,7 @@
               <span class="card-top-title">new flavor !</span>
             </div>
             <div class="card-image">
-              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+              <img src="./images/card-img02.jpg" alt="진저 맨자 음료의 사진" />
             </div>
             <div class="card-bottom">
               <div class="card-box card-padding">
@@ -175,10 +188,10 @@
                     <span class="star">&#9733;</span>
                     <span class="star">&#9734;</span>
                   </li>
-                  <ul>
-                    <li class="review-number">17</li>
-                    <li class="review-txt">review</li>
-                  </ul>
+                  <li class="review-number">
+                    <span>17</span>
+                    <span>review</span>
+                  </li>
                 </ul>
                 <ul class="card-disc">
                   <li>Sweet and Tart</li>
@@ -198,7 +211,7 @@
               <span class="card-top-title">new flavor !</span>
             </div>
             <div class="card-image">
-              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+              <img src="./images/card-img03.jpg" alt="진저 맨자 음료의 사진" />
             </div>
             <div class="card-bottom">
               <div class="card-box card-padding">
@@ -211,10 +224,10 @@
                     <span class="star">&#9733;</span>
                     <span class="star">&#9734;</span>
                   </li>
-                  <ul>
-                    <li class="review-number">17</li>
-                    <li class="review-txt">review</li>
-                  </ul>
+                  <li class="review-number">
+                    <span>17</span>
+                    <span>review</span>
+                  </li>
                 </ul>
                 <ul class="card-disc">
                   <li>Sweet and Tart</li>
@@ -234,7 +247,7 @@
               <span class="card-top-title">new flavor !</span>
             </div>
             <div class="card-image">
-              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+              <img src="./images/card-img04.jpg" alt="진저 맨자 음료의 사진" />
             </div>
             <div class="card-bottom">
               <div class="card-box card-padding">
@@ -247,10 +260,10 @@
                     <span class="star">&#9733;</span>
                     <span class="star">&#9734;</span>
                   </li>
-                  <ul>
-                    <li class="review-number">17</li>
-                    <li class="review-txt">review</li>
-                  </ul>
+                  <li class="review-number">
+                    <span>17</span>
+                    <span>review</span>
+                  </li>
                 </ul>
                 <ul class="card-disc">
                   <li>Sweet and Tart</li>
@@ -270,7 +283,7 @@
               <span class="card-top-title">new flavor !</span>
             </div>
             <div class="card-image">
-              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+              <img src="./images/card-img05.jpg" alt="진저 맨자 음료의 사진" />
             </div>
             <div class="card-bottom">
               <div class="card-box card-padding">
@@ -283,10 +296,10 @@
                     <span class="star">&#9733;</span>
                     <span class="star">&#9734;</span>
                   </li>
-                  <ul>
-                    <li class="review-number">17</li>
-                    <li class="review-txt">review</li>
-                  </ul>
+                  <li class="review-number">
+                    <span>17</span>
+                    <span>review</span>
+                  </li>
                 </ul>
                 <ul class="card-disc">
                   <li>Sweet and Tart</li>
@@ -306,7 +319,7 @@
               <span class="card-top-title">new flavor !</span>
             </div>
             <div class="card-image">
-              <img src="./images/card-img01.jpg" alt="진저 맨자 음료의 사진" />
+              <img src="./images/card-img06.jpg" alt="진저 맨자 음료의 사진" />
             </div>
             <div class="card-bottom">
               <div class="card-box card-padding">
@@ -319,10 +332,10 @@
                     <span class="star">&#9733;</span>
                     <span class="star">&#9734;</span>
                   </li>
-                  <ul>
-                    <li class="review-number">17</li>
-                    <li class="review-txt">review</li>
-                  </ul>
+                  <li class="review-number">
+                    <span>17</span>
+                    <span>review</span>
+                  </li>
                 </ul>
                 <ul class="card-disc">
                   <li>Sweet and Tart</li>
@@ -338,154 +351,27 @@
           </article>
         </div>
       </section>
+      <!-------------------------- //flavors slide -------------------------->
 
-      <!-- <section class="flavors-collection">
-        <h2>shop flavors</h2>
-        <div class="collection-slide">
-          <div class="collection-card">
-            <ul>
-              <li class="collection-card-inner">
-                <div class="collection-card__header">new flavor !</div>
-                <div class="collection-card__center">
-                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
-                </div>
-                <div class="collection-card__body">
-                  <div class="collection-card__top">
-                    <h3>prickly pear</h3>
-                    <div class="collection-card__review">
-                      <div class="review-stars">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                      </div>
-                      <p>16 Reviews</p>
-                    </div>
-                    <div class="collection-card__disc">
-                      Sweet and Tart <br />
-                      Perfect Shade of Pink <br />
-                      delicately balanced
-                    </div>
-                  </div>
-                  <div class="collection-card__controls">
-                    <button class="cart-button">add to cart</button>
-                    <button class="list-button">shop now</button>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-card-inner">
-                <div class="collection-card__header">new flavor !</div>
-                <div class="collection-card__center">
-                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
-                </div>
-                <div class="collection-card__body">
-                  <div class="collection-card__top">
-                    <h3>prickly pear</h3>
-                    <div class="collection-card__review">
-                      <div class="review-stars">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                      </div>
-                      <p>16 Reviews</p>
-                    </div>
-                    <div class="collection-card__disc">
-                      Sweet and Tart <br />
-                      Perfect Shade of Pink <br />
-                      delicately balanced
-                    </div>
-                  </div>
-                  <div class="collection-card__controls">
-                    <button class="cart-button">add to cart</button>
-                    <button class="list-button">shop now</button>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-card-inner">
-                <div class="collection-card__header">new flavor !</div>
-                <div class="collection-card__center">
-                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
-                </div>
-                <div class="collection-card__body">
-                  <div class="collection-card__top">
-                    <h3>prickly pear</h3>
-                    <div class="collection-card__review">
-                      <div class="review-stars">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                      </div>
-                      <p>16 Reviews</p>
-                    </div>
-                    <div class="collection-card__disc">
-                      Sweet and Tart <br />
-                      Perfect Shade of Pink <br />
-                      delicately balanced
-                    </div>
-                  </div>
-                  <div class="collection-card__controls">
-                    <button class="cart-button">add to cart</button>
-                    <button class="list-button">shop now</button>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-card-inner">
-                <div class="collection-card__header">new flavor !</div>
-                <div class="collection-card__center">
-                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
-                </div>
-                <div class="collection-card__body">
-                  <div class="collection-card__top">
-                    <h3>prickly pear</h3>
-                    <div class="collection-card__review">
-                      <div class="review-stars">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                      </div>
-                      <p>16 Reviews</p>
-                    </div>
-                    <div class="collection-card__disc">
-                      Sweet and Tart <br />
-                      Perfect Shade of Pink <br />
-                      delicately balanced
-                    </div>
-                  </div>
-                  <div class="collection-card__controls">
-                    <button class="cart-button">add to cart</button>
-                    <button class="list-button">shop now</button>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section> -->
-
+      <!-------------------------- home banner -------------------------->
       <!-- 
-      ❓Questions❓
-      1. css에서 백그라운드 이미지 설정??
-      2. 과일들 왜저랭..
+        ❓Questions❓
+        1. css에서 백그라운드 이미지 설정??
+        2. 과일들 왜저랭..
       -->
-      <section class="banner-image">
-        <div class="home-banner">
-          <img class="home-page-left" src="./images/home-page-image-1.png" alt="오렌지" />
-          <img class="home-page-right" src="./images/home-page-image-2.png" alt="파인애플" />
+      <section class="home-banner-box">
+        <div class="home-banner-wrap">
+          <!-- <img class="home-page-left" src="./images/home-page-image-1.png" alt="오렌지" />
+          <img class="home-page-right" src="./images/home-page-image-2.png" alt="파인애플" /> -->
         </div>
       </section>
-
+      <!-------------------------- //home banner -------------------------->
+      
       <!-- 
       ❓Questions❓
       1. 위 collection-slide랑은 다르지만 비슷한 스타일인데 이런 건 어떻게 해야 현명할까?
       -->
-      <section class="home-collection">
+      <!-- <section class="home-collection">
         <div class="wrap">
           <h2>shop variety packs</h2>
           <div class="collection-list">
@@ -553,14 +439,14 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- 
       ❓Questions❓
       1. 브랜드 이미지를 ul > li로 주는 것이 맞는가...!!
       2. 오렌지 안녕..?
       -->
-      <section class="home-press">
+      <!-- <section class="home-press">
         <div class="wrap">
           <h2>in the press</h2>
           <div class="brand-name">
@@ -589,9 +475,9 @@
           </div>
           <img class="sticker-orage" src="./images/orange.svg" alt="오렌지" />
         </div>
-      </section>
+      </section> -->
 
-      <section class="about">
+      <!-- <section class="about">
         <div class="wrap flex__vertical-center">
           <div class="main-harf">
             <h3>a modern mexican soda</h3>
@@ -606,8 +492,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
+    <!-------------------------- //main -------------------------->
     <footer></footer>
   </body>
 </html>

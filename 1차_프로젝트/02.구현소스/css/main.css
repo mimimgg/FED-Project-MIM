@@ -7,7 +7,7 @@
 /*************** header ***************/
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   top: 0;
   width: 100%;
   height: 9.4rem;
@@ -88,13 +88,13 @@ main {
 /*************** product-marquee ***************/
 .product-marquee {
   position: relative;
-  margin-top: -50px;
+  margin-top: -30px;
   transform: rotate(-2deg);
+  z-index: 2;
 }
 .marquee-wrap {
   display: flex;
   overflow: hidden;
-  
 }
 @keyframes move-txt-ani {
   0% {
@@ -129,134 +129,143 @@ main {
 }
 /*************** //product-marquee ***************/
 
-/* section 03.flavors-collection */
-.flavors-collection {
+/*************** flavors slide ***************/
+.slider-box {
   width: 100%;
-  height: 96.8rem;
+  padding: 6rem 0;
+  position: relative;
   background-color: var(--background-color);
 }
-.flavors-collection h2 {
-  padding-top: 6.4rem;
-  text-align: center;
-}
-.collection-slide {
+.slider-wrap {
+  display: flex;
   width: 100%;
-  height: 64.8rem;
-  margin: 4.8rem 0;
+  gap: 3.2rem;
+  padding-top: 4rem;
   overflow: hidden;
 }
-.collection-card {
-  width: 37.6rem;
-  height: 64.8rem;
+.card-padding {
+  padding: 0 2.4rem;
 }
-.collection-card ul {
-  display: flex;
-  gap: 3.2rem;
-}
-.collection-card-inner {
+.card {
+  min-width: 376px;
+  width: 100%;
+  background-color: transparent;
   text-transform: uppercase;
 }
-.collection-card__header {
+.card-top {
   width: 100%;
-  height: 4rem;
-  padding: 0 2.4rem;
-  line-height: 4rem;
-  font-family: "Advent Pro", sans-serif;
-  font-size: 1.6rem;
-  font-weight: bold;
-
-  color: #ff4439;
+  height: 40px;
   background-color: #ffdd04;
 }
-.collection-card__center {
+.card-top-title {
+  font-size: 1.6rem;
+  line-height: 40px;
+  font-family: "Advent Pro";
+  color: #e1248f;
+  font-weight: bold;
+}
+.card-image {
   position: relative;
   width: 100%;
-  height: 24rem;
-  aspect-ratio: 1.7;
+  height: 240px;
   overflow: hidden;
 }
-.collection-card__center img {
-  width: 100%;
+.card-image img {
   position: absolute;
-  top: -50%;
-  transform: translateY(8%);
+  width: 100%;
+  top: -30%;
 }
-.collection-card__body {
+.card-bottom {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 36.8rem;
-  padding: 1.6rem 2.4rem;
-  border: 2px solid #ff4439;
-  background-color: transparent;
+  width: 100%;
+  height: 368px;
+  padding: 16px 0;
+  border: 2px solid #e1248f;
 }
-.collection-card__top h3 {
-  padding-bottom: 1.6rem;
+.card-bottom h4 {
+  font-family: "Bangers";
   font-size: 4rem;
-  font-family: "Bangers", system-ui;
-  color: #ff4439;
+  color: #e1248f;
 }
-.collection-card__review {
+.card-review {
   display: flex;
-  align-items: center;
-  gap: 1.6rem;
-  padding-bottom: 2rem;
-}
-.review-stars {
-  display: flex;
-  gap: 0.4rem;
+  gap: 16px;
   font-size: 1.6rem;
-  color: #ff4439;
+  color: #e1248f;
+  font-family: "Advent Pro";
+  text-transform: capitalize;
+  margin: 16px 0;
 }
-.collection-card__review > p {
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
-  color: #ff4439;
-  font-family: "Advent Pro", sans-serif;
-  text-transform: none;
-}
-.collection-card__disc {
-  font-family: "Advent Pro", sans-serif;
-  font-size: 1.6rem;
-  color: #ff4439;
-  line-height: 2rem;
-}
-.collection-card__controls {
+.card-disc {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 8px;
+  font-size: 1.6rem;
+  font-family: "Advent Pro";
+  color: #e1248f;
+  text-transform: capitalize;
 }
-.collection-card__controls > button {
-  font-family: "Advent Pro", sans-serif;
+.card-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.card-btn button {
   text-transform: uppercase;
+  font-family: "Advent Pro";
   font-size: 2.4rem;
-  padding: 0.8rem 8.8rem;
-  transition: opacity 0.5s linear;
+  font-weight: 500;
+  padding: 0.8rem 2.4rem;
+  transition: 0.3s;
+}
+.primary-btn {
+  background-color: #e1248f;
+  color: #fff;
+}
+.primary-btn:hover {
+  background-color: #d1137a; /* 어두운 색상으로 변경 */
   cursor: pointer;
 }
-.cart-button {
-  background: #ff4439;
-  color: var(--background-color);
-  opacity: 0.9;
+.secondary-btn {
+  border: 2px solid #e1248f;
+  color: #e1248f;
+  background-color: var(--background-color);
 }
-.cart-button:hover {
-  opacity: 1;
+.secondary-btn:hover {
+  border: 2px solid #e1248f;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109); /* 그림자 효과 */
+  cursor: pointer;
 }
-.list-button {
-  border: 2px solid #ff4439;
-  background-color: transparent;
-  color: #ff4439;
-  opacity: 0.9;
-}
-/* section // 03.flavors-collection */
+/*************** //flavors slide ***************/
 
-/* section 04.banner-image */
-.banner-image {
+
+/*************** home-banner ***************/
+.home-banner-box {
   position: relative;
   width: 100%;
-  height: 54.4rem;
-  background: url(../images/total-product.jpg) no-repeat 100%/100%;
+  min-height: 80rem;
+  background: url(../images/total-product.jpg) no-repeat 100% bottom/cover;
+  overflow: hidden; /* 자식 요소가 부모를 넘지 않도록 설정 */
 }
+
+.home-banner-wrap {
+  position: absolute; /* 부모 요소에 상대적으로 위치 설정 */
+  top: 0; /* 상단에 위치 */
+  left: 0; /* 왼쪽에 위치 */
+  right: 0; /* 오른쪽에 위치 */
+  bottom: 0; /* 하단에 위치 */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 55px)); /* 사선 모양 */
+  background: var(--background-color)
+}
+/*************** //home-banner ***************/
+
+
+
+
+
 /* .home-banner {
   position: relative;
 } */
@@ -346,113 +355,7 @@ main {
 
 /* //main */
 
-/* footer */
-
-.slider {
-}
-.slider-wrappr {
-  display: flex;
-  gap: 3.2rem;
-}
-.card-padding {
-  padding: 0 2.4rem;
-}
-.card {
-  max-width: 376px;
-  width: 100%;
-  background-color: transparent;
-  text-transform: uppercase;
-}
-.card-top {
-  width: 100%;
-  height: 40px;
-  background-color: #ffdd04;
-}
-.card-top-title {
-  font-size: 1.6rem;
-  line-height: 40px;
-  font-family: "Advent Pro";
-  color: #e1248f;
-  font-weight: bold;
-}
-.card-image {
-  position: relative;
-  width: 100%;
-  height: 240px;
-  overflow: hidden;
-}
-.card-image img {
-  position: absolute;
-  width: 100%;
-  top: -30%;
-}
-.card-bottom {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  height: 368px;
-  padding: 16px 0;
-  border: 2px solid #e1248f;
-}
-.card-bottom h4 {
-  font-family: "Bangers";
-  font-size: 4rem;
-  color: #e1248f;
-}
-.card-review {
-  display: flex;
-  gap: 16px;
-  font-size: 1.6rem;
-  color: #e1248f;
-  font-family: "Advent Pro";
-  text-transform: capitalize;
-  margin: 16px 0;
-}
-.card-review > ul {
-  display: flex;
-  gap: 4px;
-}
-.card-disc {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  font-size: 1.6rem;
-  font-family: "Advent Pro";
-  color: #e1248f;
-  text-transform: capitalize;
-}
-.card-btn {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
-}
-.card-btn button {
-  text-transform: uppercase;
-  font-family: "Advent Pro";
-  font-size: 2.4rem;
-  font-weight: 500;
-  padding: 0.8rem 2.4rem;
-  transition: 0.3s;
-}
-.primary-btn {
-  background-color: #e1248f;
-  color: #fff;
-}
-.primary-btn:hover {
-  background-color: #d1137a; /* 어두운 색상으로 변경 */
-  cursor: pointer;
-}
-.secondary-btn {
-  border: 2px solid #e1248f;
-  color: #e1248f;
-  background-color: var(--background-color);
-}
-.secondary-btn:hover {
-  border: 2px solid #e1248f;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.109); /* 그림자 효과 */
-  cursor: pointer;
-}
 
 /*************** // main ***************/
+
+/* footer */
