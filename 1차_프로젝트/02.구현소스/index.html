@@ -356,101 +356,113 @@
       <!-------------------------- home banner -------------------------->
       <!-- 
         ❓Questions❓
-        1. css에서 백그라운드 이미지 설정??
-        2. 과일들 왜저랭..
+        1. 과일을 어떻게 놓는 것이 현명할까!?
+        2. 파인애플이 영역을 넘어가면서 가로스크롤이 발생해서 너무 속상하다
       -->
       <section class="home-banner-box">
-        <div class="home-banner-wrap">
-          <!-- <img class="home-page-left" src="./images/home-page-image-1.png" alt="오렌지" />
-          <img class="home-page-right" src="./images/home-page-image-2.png" alt="파인애플" /> -->
-        </div>
+        <!-- <div class="home-banner-wrap">
+          <img class="home-page-left" src="./images/home-page-image-1.png" alt="오렌지" />
+          <img class="home-page-right" src="./images/home-page-image-2.png" alt="파인애플" />
+        </div> -->
       </section>
       <!-------------------------- //home banner -------------------------->
-      
+
+      <!-------------------------- collection-box -------------------------->
       <!-- 
       ❓Questions❓
-      1. 위 collection-slide랑은 다르지만 비슷한 스타일인데 이런 건 어떻게 해야 현명할까?
+      1. 위 flavors-slide랑은 다르지만 동일한 스타일인데 어떻게 마크업 하는 게 현명할까?
+      2. 이녀석의 배경을 기울여야한단 말이지?
       -->
-      <!-- <section class="home-collection">
-        <div class="wrap">
-          <h2>shop variety packs</h2>
-          <div class="collection-list">
-            <ul>
-              <li class="collection-card-inner">
-                <div class="collection-card__header">new flavor !</div>
-                <div class="collection-card__center">
-                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
-                </div>
-                <div class="collection-card__body">
-                  <div class="collection-card__top">
-                    <h3>prickly pear</h3>
-                    <div class="collection-card__review">
-                      <div class="review-stars">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                      </div>
-                      <p>16 Reviews</p>
-                    </div>
-                    <div class="collection-card__disc">
-                      Sweet and Tart <br />
-                      Perfect Shade of Pink <br />
-                      delicately balanced
-                    </div>
-                  </div>
-                  <div class="collection-card__controls">
-                    <button class="cart-button">add to cart</button>
-                    <button class="list-button">shop now</button>
-                  </div>
-                </div>
-              </li>
-              <li class="collection-card-inner">
-                <div class="collection-card__header">new flavor !</div>
-                <div class="collection-card__center">
-                  <img src="./images/card-img01.jpg" alt="음맛있엉" />
-                </div>
-                <div class="collection-card__body">
-                  <div class="collection-card__top">
-                    <h3>prickly pear</h3>
-                    <div class="collection-card__review">
-                      <div class="review-stars">
-                        <span>★</span>
-                        <span>★</span>
-                        <span>★</span>
-                        <span>☆</span>
-                        <span>☆</span>
-                      </div>
-                      <p>16 Reviews</p>
-                    </div>
-                    <div class="collection-card__disc">
-                      Sweet and Tart <br />
-                      Perfect Shade of Pink <br />
-                      delicately balanced
-                    </div>
-                  </div>
-                  <div class="collection-card__controls">
-                    <button class="cart-button">add to cart</button>
-                    <button class="list-button">shop now</button>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+      <section class="collection-box">
+        <h2 class="rotate-left">shop variety packs</h2>
+        <div class="collection-wrap">
+          <!-- 카드1 -->
+          <article class="collection-card">
+            <div class="card-top card-padding">
+              <span class="card-top-title">new flavor !</span>
+            </div>
+            <div class="card-image">
+              <img src="./images/collection-img01.jpg" alt="진저 맨자 음료의 사진" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-box card-padding">
+                <h4>prickly pear</h4>
+                <ul class="card-review">
+                  <li class="review-star">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                  </li>
+                  <li class="review-number">
+                    <span>17</span>
+                    <span>review</span>
+                  </li>
+                </ul>
+                <ul class="card-disc">
+                  <li>Sweet and Tart</li>
+                  <li>Perfect Shade of Pink</li>
+                  <li>delicately balanced</li>
+                </ul>
+              </div>
+              <div class="card-btn card-padding">
+                <button class="primary-btn" aria-label="주요 버튼">add to cart</button>
+                <button class="secondary-btn" aria-label="보조 버튼">shop now</button>
+              </div>
+            </div>
+          </article>
+          <!-- 카드2 -->
+          <article class="collection-card">
+            <div class="card-top card-padding">
+              <span class="card-top-title">new flavor !</span>
+            </div>
+            <div class="card-image">
+              <img src="./images/collection-img02.jpg" alt="진저 맨자 음료의 사진" />
+            </div>
+            <div class="card-bottom">
+              <div class="card-box card-padding">
+                <h4>mixta</h4>
+                <ul class="card-review">
+                  <li class="review-star">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9734;</span>
+                  </li>
+                  <li class="review-number">
+                    <span>17</span>
+                    <span>review</span>
+                  </li>
+                </ul>
+                <ul class="card-disc">
+                  <li>Sweet and Tart</li>
+                  <li>Perfect Shade of Pink</li>
+                  <li>delicately balanced</li>
+                </ul>
+              </div>
+              <div class="card-btn card-padding">
+                <button class="primary-btn" aria-label="주요 버튼">add to cart</button>
+                <button class="secondary-btn" aria-label="보조 버튼">shop now</button>
+              </div>
+            </div>
+          </article>
         </div>
-      </section> -->
+      </section>
+      <!-------------------------- //collection-box -------------------------->
 
+      <!-------------------------- home-press -------------------------->
       <!-- 
       ❓Questions❓
       1. 브랜드 이미지를 ul > li로 주는 것이 맞는가...!!
       2. 오렌지 안녕..?
       -->
-      <!-- <section class="home-press">
+      <section class="home-press">
         <div class="wrap">
-          <h2>in the press</h2>
-          <div class="brand-name">
-            <ul>
+          <h2 class="rotate-left">in the press</h2>
+          <div class="home-press-box">
+            <ul class="brand-name">
               <li>
                 <a href="#">
                   <img src="./images/bevenet.png" alt="" />
@@ -473,28 +485,121 @@
               </li>
             </ul>
           </div>
-          <img class="sticker-orage" src="./images/orange.svg" alt="오렌지" />
+          <!-- <img class="sticker-orage" src="./images/orange.svg" alt="오렌지" /> -->
         </div>
-      </section> -->
+      </section>
+      <!-------------------------- //home-press -------------------------->
 
-      <!-- <section class="about">
-        <div class="wrap flex__vertical-center">
-          <div class="main-harf">
-            <h3>a modern mexican soda</h3>
-          </div>
-          <div class="about-right">
-            <div class="about-disc">
-              Finally, A lower sugar, lower calorie Mexican soda that delivers modern flavors with traditional
-              inspiration. TEPACHE IS A NATURALLY FERMENTED BEVERAGE MADE WITH PINEAPPLES, SPICES AND TROPICAL FRUITS.
-              WE’VE CRAFTED OUR RECIPES BY TAKING INSPIRATION FROM REGIONS THROUGHOUT MEXICO, CREATING DELICIOUSLY BOLD
-              COMBINATIONS.
-              <button class="cart-button">add to cart</button>
+      <!-------------------------- home-about -------------------------->
+      <section class="home-about">
+        <div class="wrap">
+          <div class="home-wrap">
+            <div class="home-left">
+              <h3 class="rotate-left"><span>a modern</span> <span>mexican soda</span></h3>
+            </div>
+            <div class="home-right rotate-left">
+              <div class="home-disc">
+                <p>
+                  Finally, A lower sugar, lower calorie Mexican soda that delivers modern flavors with traditional
+                  inspiration.
+                </p>
+                <p>
+                  TEPACHE IS A NATURALLY FERMENTED BEVERAGE MADE WITH PINEAPPLES, SPICES AND TROPICAL FRUITS. WE’VE
+                  CRAFTED OUR RECIPES BY TAKING INSPIRATION FROM REGIONS THROUGHOUT MEXICO, CREATING DELICIOUSLY BOLD
+                  COMBINATIONS.
+                </p>
+              </div>
+              <button class="click-button">add to cart</button>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
+      <!-------------------------- //home-about -------------------------->
+
+      <!-------------------------- product-banner -------------------------->
+      <!-- 
+      ❓Questions❓
+      1. 기울이고 싶어....
+      -->
+      <section class="product-banner">
+        <div class="product-banner-box">
+          <p>a Delicious and tasty mexican soda!</p>
+        </div>
+      </section>
+      <!-------------------------- //product-banner -------------------------->
     </main>
     <!-------------------------- //main -------------------------->
-    <footer></footer>
+
+    <!-------------------------- footer -------------------------->
+    <footer>
+    <!-------------------------- footer-top -------------------------->
+      <div class="footer-top">
+        <div class="wrap">
+          <div class="footer-top-box rotate-right">
+            <h2>Let's get social</h2>
+            <div class="social-button">
+              <button class="click-button">@delacalleco</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-------------------------- //footer-top -------------------------->
+    <!-------------------------- footer-explain -------------------------->
+      <div class="footer-explain">
+        <div class="wrap">
+          <div class="explain-wrap">
+            <div class="flogo">
+              <img src="./images/flogo.jpg" alt="하단로고">
+            </div>
+            <ul class="footer-linklist">
+              <li class="sub-linklist"><a href="#">Subscribe</a></li>
+              <li class="sub-linklist"><a href="#">Find a Store</a></li>
+              <li class="sub-linklist"><a href="#">FAQ</a></li>
+              <li class="sub-linklist"><a href="#">Careers</a></li>
+              <li class="sub-linklist"><a href="#">Blog</a></li>
+            </ul>
+            <ul class="footer-linklist">
+              <li class="sub-linklist"><a href="#">Shop</a></li>
+              <li class="sub-linklist"><a href="#">Familia</a></li>
+              <li class="sub-linklist"><a href="#">History</a></li>
+              <li class="sub-linklist"><a href="#">CCPA OPT-OUT</a></li>
+              <li class="sub-linklist"><a href="#">SPONSOR REQUESTS</a></li>
+            </ul>
+            <ul class="footer-linklist">
+              <li class="sub-linklist"><a href="#">Terms</a></li>
+              <li class="sub-linklist"><a href="#">Privacy</a></li>
+              <li class="sub-linklist"><a href="#">Returns</a></li>
+              <li class="sub-linklist"><a href="#">Log In</a></li>
+              <li class="sub-linklist"><a href="#">Wholesale Inquiries</a></li>
+              <li class="sub-linklist"><a href="#">Shipping</a></li>
+            </ul>
+            <div class="footer-newsletter">
+              <div class="newsletter">
+                <form method="post">Email address</form>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+              <div class="social-sns">
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-square-facebook"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 
+      ❓Questions❓
+      1. 배경은 우찌하는건데여?? 참나!
+      -->
+      <img src="./images/test_background.png" alt="테스트여" class="test">
+    <!-------------------------- //footer-explain -------------------------->
+    </footer>
+    <!-------------------------- //footer -------------------------->
   </body>
 </html>

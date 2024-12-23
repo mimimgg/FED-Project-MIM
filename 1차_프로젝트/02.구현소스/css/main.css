@@ -4,52 +4,6 @@
 @import url(./reset.css);
 @import url(./common.css);
 
-/*************** header ***************/
-header {
-  position: fixed;
-  z-index: 3;
-  top: 0;
-  width: 100%;
-  height: 9.4rem;
-  background-color: var(--background-color);
-  border-bottom: 2px solid var(--primary-color);
-}
-/*************** nav ***************/
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 9.4rem;
-}
-.left-menu,
-.right-menu {
-  display: flex;
-  align-items: center;
-  gap: 3.2rem;
-}
-.left-menu a,
-.right-menu a {
-  font-size: 1.6rem;
-  font-weight: bold;
-  font-family: "Montserrat", serif;
-  text-transform: uppercase;
-  color: var(--primary-color);
-}
-.right-menu {
-  justify-content: flex-end;
-}
-.logo {
-  text-align: center;
-  /* position: absolute;
-  top: 28%;
-  left: 50%;
-  transform: translateX(-50%); */
-}
-.logo img {
-  width: 9.9rem;
-}
-/*************** //header ***************/
-
 /*************** main ***************/
 main {
   width: 100%;
@@ -132,7 +86,7 @@ main {
 /*************** flavors slide ***************/
 .slider-box {
   width: 100%;
-  padding: 6rem 0;
+  padding: 12rem 0;
   position: relative;
   background-color: var(--background-color);
 }
@@ -248,27 +202,12 @@ main {
   width: 100%;
   min-height: 80rem;
   background: url(../images/total-product.jpg) no-repeat 100% bottom/cover;
-  overflow: hidden; /* 자식 요소가 부모를 넘지 않도록 설정 */
+  overflow: hidden;
 }
 
-.home-banner-wrap {
-  position: absolute; /* 부모 요소에 상대적으로 위치 설정 */
-  top: 0; /* 상단에 위치 */
-  left: 0; /* 왼쪽에 위치 */
-  right: 0; /* 오른쪽에 위치 */
-  bottom: 0; /* 하단에 위치 */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 55px)); /* 사선 모양 */
-  background: var(--background-color)
-}
-/*************** //home-banner ***************/
-
-
-
-
-
-/* .home-banner {
+/* .home-banner-wrap {
   position: relative;
-} */
+}
 .home-page-left {
   position: absolute;
   width: 15%;
@@ -280,82 +219,234 @@ main {
   width: 15%;
   bottom: -16%;
   right: -5%;
-}
-/* section //04.banner-image */
+} */
+/*************** //home-banner ***************/
 
-/* section 05.home-collection */
-.home-collection {
+/*************** collection-box ***************/
+.collection-box {
   width: 100%;
-  height: 97.8rem;
-  background-color: #cbde82;
+  padding: 12rem 0;
+  position: relative;
+  background-color: #CBDE82;
 }
-.home-collection h2 {
-  padding-top: 6.4rem;
-  text-align: center;
-}
-.collection-list {
-  margin: 4.8rem 0;
-}
-.collection-list > ul {
+.collection-wrap {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  width: 100%;
   gap: 3.2rem;
+  padding: 4rem 4rem 0;
 }
-/* section //05.home-collection */
+.collection-card {
+  max-width: 440px;
+  width: 100%;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+.collection-card .card-top {
+  background-color: #F94239;
+}
+.collection-card .card-top-title {
+  color: #CBDE82;
+}
+.collection-card .card-bottom *{
+  color: #F94239;
+}
+.collection-card .card-bottom {
+  border: 2px solid #F94239;
+}
+.collection-card .card-bottom .card-btn .primary-btn {
+  color: #CBDE82;
+  background-color: #F94239;
+}
+.collection-card .card-bottom .card-btn .secondary-btn {
+  color: #F94239;
+  border: 2px solid #F94239;
+  background-color: transparent;
+}
+/*************** //collection-box ***************/
 
-/* section 06.home-press */
+/*************** home-press ***************/
 .home-press {
   width: 100%;
-  height: 46rem;
+  padding: 12rem 0;
   background-color: var(--background-color);
 }
-.home-press h2 {
-  padding-top: 6.4rem;
-  text-align: center;
+.home-press-box {
+  width: 100%;
+  padding-top: 8rem;
 }
 .brand-name {
-  margin-top: 8.8rem;
-}
-.brand-name > ul {
-  display: flex;
-  justify-content: space-between;
-}
-/* section //06.home-press */
-
-/* section 07.about */
-.about {
   width: 100%;
-  height: 46rem;
+  display: flex;
+  gap: 8rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.brand-name li {
+  width: min(24rem, 22vw);
+}
+.brand-name img {
+  width: 100%;
+}
+/*************** //home-press ***************/
+
+/*************** home-about ***************/
+.home-about {
+  width: 100%;
+  padding: 12rem 0;
   background-color: var(--primary-color);
 }
-.about h3 {
-  font-size: 8.8rem;
+.home-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-left h3 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: min(12.8rem, 8vw);
   color: var(--background-color);
   font-weight: bold;
   font-family: "Barrio", system-ui;
 }
-.about-left {
-  width: 50%;
-}
-.about-right {
-  width: 50%;
-}
-.about-disc {
-  width: 48.6rem;
+.home-right {
+  width: 34%;
   text-align: center;
-  margin: 0 auto;
-  font-family: "Montserrat", serif;
-  font-size: 1.6rem;
-  color: var(--background-color);
-  line-height: 2rem;
 }
-
-/* section // 07.about */
-
-/* //main */
-
-
+.home-disc {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  color: var(--background-color);
+  font-family: "Advent Pro", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  line-height: 3.4rem;
+}
+.home-right > .click-button {
+  font-family: "Advent Pro", sans-serif;
+  font-size: min(2.4rem,2vw);
+  padding: .8rem 8.8rem;
+  margin-top: 4rem;
+  background: var(--background-color);
+  color: var(--primary-color);
+  opacity: .9;
+  transition: opacity .5s linear;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+/*************** //home-about ***************/
+/*************** product-banner ***************/
+.product-banner {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  background: url(../images/product-banner.jpg) no-repeat top / 120%;
+  border-bottom: 2px solid var(--primary-color);
+}
+.product-banner-box {
+  position: absolute;
+  top: -6%;
+  left: 50%;
+  translate: -50% 0;
+  max-width: 40rem;
+  padding: 2rem 4rem;
+  background-color: var(--primary-color);
+  border: 2px solid var(--background-color);
+}
+.product-banner-box > p {
+  font-size: 2.4rem;
+  font-family: "Montserrat", serif;
+  color: var(--background-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+/*************** //product-banner ***************/
 /*************** // main ***************/
 
-/* footer */
+/*************** footer ***************/
+footer {
+  position: relative;
+}
+footer > .test {
+  position: absolute;
+  width: 100%;
+  top: 38%;
+}
+/*************** footer-top ***************/
+.footer-top {
+  width: 100%;
+  padding: 16rem 0;
+}
+.footer-top-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-top button {
+  text-transform: uppercase;
+}
+/*************** //footer-top ***************/
+
+/*************** footer-explain ***************/
+.footer-explain {
+  width: 100%;
+  padding: 16rem 0;
+  background-color: var(--primary-color);
+}
+.explain-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+.flogo > img {
+  width: 16rem;
+}
+.footer-linklist {
+  border-top: 2px solid var(--background-color);
+}
+.sub-linklist {
+  font-size: 1.6rem;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+}
+.sub-linklist:first-child {
+  margin-top: 1rem;
+}
+.sub-linklist > a {
+  color: var(--background-color);
+  text-transform: uppercase;
+  line-height: 4rem;
+  opacity: .9;
+}
+.sub-linklist:hover > a {
+  opacity: 1;
+}
+.newsletter {
+  width: 32rem;
+  height: 5.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  font-family: "Montserrat", serif;
+  font-weight: bold;
+  color: var(--background-color);
+  border: 2px solid var(--background-color);
+  padding: 1.6rem;
+}
+.footer-newsletter a {
+  color: var(--background-color);
+  font-size: 2.4rem;
+}
+.social-sns{
+  display: flex;
+  justify-content: flex-end;
+  gap: 3.2rem;
+  margin-top: 2.4rem;
+}
+/*************** //footer-explain ***************/
+/*************** // footer ***************/

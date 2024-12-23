@@ -40,6 +40,50 @@ nav.wrap>div{
   flex: 1;
 }
 
+
+/*************** ✨ 상단영역 ✨ ***************/
+header {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  width: 100%;
+  height: 9.4rem;
+  background-color: var(--background-color);
+  border-bottom: 2px solid var(--primary-color);
+}
+/*************** nav ***************/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 9.4rem;
+}
+.left-menu,
+.right-menu {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+.left-menu a,
+.right-menu a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "Montserrat", serif;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+.right-menu {
+  justify-content: flex-end;
+}
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 9.9rem;
+}
+/*************** //상단영역 ***************/
+
+
 /*************** 섹션별 상단 타이틀 ***************/
 h2 {
   font-size: min(8.8rem,5vw);
