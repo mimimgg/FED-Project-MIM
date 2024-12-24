@@ -53,6 +53,7 @@ header {
 }
 /*************** nav ***************/
 nav {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -81,6 +82,53 @@ nav {
 .logo img {
   width: 9.9rem;
 }
+/*************** 서브메뉴 SHOP ***************/
+.mega_sub-menu {
+  display: flex;
+  width: 100%;
+  padding: 2.4rem .4rem;
+  position: absolute;
+  top: 9.4rem;
+  left: 50%;
+  translate: -50%;
+  background-color: var(--primary-color);
+}
+.mega_sub-menu-list {
+  width: 100%;
+}
+.mega_sub-menu-list > span {
+  display: block;
+  text-transform: uppercase;
+  font-family: "Advent Pro";
+  font-size: 2.4rem;
+  font-weight: 500;
+  padding-bottom: 2.4rem;
+  transition: 0.3s;
+  color: var(--background-color);
+}
+.mega_sub-menu__wrap {
+  display: flex;
+}
+.mega-sub-menu__items {
+  background-color: var(--background-color);
+}
+.mega-sub-menu__item {
+  border: 2px solid var(--primary-color)
+}
+.mega-sub-menu__link {
+  width: 14vw;
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  padding: 2rem ;
+}
+.mega-sub-menu__link img {}
+/*************** //서브메뉴 SHOP ***************/
+/*************** 서브메뉴 ABOUT ***************/
+.mega__sub-about {
+
+}
+/*************** //서브메뉴 ABOUT ***************/
 /*************** //상단영역 ***************/
 
 
