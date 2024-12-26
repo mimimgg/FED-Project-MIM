@@ -26,6 +26,10 @@
   --primary-color: #f9423a;
   --white-color: #fff;
 }
+
+html, body {
+  overflow-x: hidden;
+}
 body{
   padding-top: 95px;
   background-color: var(--background-color);
