@@ -93,15 +93,15 @@ nav {
   padding: 2.4rem .4rem;
   position: absolute;
   top: 9.4rem;
-  left: 50%;
-  translate: -50%;
+  /* left: 50%;
+  translate: -50%; */
   background-color: var(--primary-color);
 }
 .mega_sub-menu-list {
   width: 100%;
 }
 .mega_sub-menu-list > span {
-  display: block;
+  display: inline-block;
   text-transform: uppercase;
   font-family: "Advent Pro";
   font-size: 2.4rem;
