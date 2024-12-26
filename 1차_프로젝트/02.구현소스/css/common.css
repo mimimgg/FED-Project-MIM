@@ -6,11 +6,11 @@
 /* Barrio */
 @import url("https://fonts.googleapis.com/css2?family=Barrio&display=swap");
 /* Titan One */
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
 /* Advent Pro */
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap");
 /* Bangers */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 
 /*
   font-family: "Montserrat", serif;
@@ -27,10 +27,11 @@
   --white-color: #fff;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
-body{
+body {
   padding-top: 95px;
   background-color: var(--background-color);
 }
@@ -40,10 +41,9 @@ body{
   margin: 0 auto;
   padding: 0 4rem;
 }
-nav.wrap>div{
+nav.wrap > div {
   flex: 1;
 }
-
 
 /*************** ✨ 상단영역 ✨ ***************/
 header {
@@ -90,15 +90,18 @@ nav {
 .mega_sub-menu {
   display: flex;
   width: 100%;
-  padding: 2.4rem .4rem;
+  padding: 2.4rem 0.4rem;
   position: absolute;
   top: 9.4rem;
+  left: 0;
   /* left: 50%;
   translate: -50%; */
   background-color: var(--primary-color);
+  box-sizing: border-box;
 }
-.mega_sub-menu-list {
+.mega_sub-menu-list:last-child {
   width: 100%;
+  margin-left: 1%;
 }
 .mega_sub-menu-list > span {
   display: inline-block;
@@ -109,6 +112,7 @@ nav {
   padding-bottom: 2.4rem;
   transition: 0.3s;
   color: var(--background-color);
+  white-space: nowrap;
 }
 .mega_sub-menu__wrap {
   display: flex;
@@ -117,28 +121,45 @@ nav {
   background-color: var(--background-color);
 }
 .mega-sub-menu__item {
-  border: 2px solid var(--primary-color)
+  border: 2px solid var(--primary-color);
 }
 .mega-sub-menu__link {
   width: 14vw;
   display: flex;
   gap: 1.2rem;
   align-items: center;
-  padding: 2rem ;
+  padding: 2rem;
 }
-.mega-sub-menu__link img {}
+.mega-sub-menu__link img {
+}
 /*************** //서브메뉴 SHOP ***************/
 /*************** 서브메뉴 ABOUT ***************/
 .mega__sub-about {
-
 }
 /*************** //서브메뉴 ABOUT ***************/
 /*************** //상단영역 ***************/
-
+.rot-set {
+  padding: 10vh 0;
+  position: relative;
+  left: 50%;
+  width: 200% !important;
+}
+.rot-set-color1 {
+  translate: -50% -22vh;
+  background-color: #cbde82;
+}
+.rot-set-color2 {
+  translate: -50% -22vh;
+  background-color: var(--background-color);
+}
+.rot-set-color3 {
+  translate: -50% -12vh;
+  background-color: var(--primary-color);
+}
 
 /*************** 섹션별 상단 타이틀 ***************/
 h2 {
-  font-size: min(8.8rem,5vw);
+  font-size: min(8.8rem, 5vw);
   color: var(--primary-color);
   font-weight: bold;
   font-family: "Barrio", system-ui;
@@ -146,19 +167,23 @@ h2 {
 }
 
 /*************** 텍스트 회전 각도 ***************/
-.rotate-right {rotate: -4deg;}
-.rotate-left {rotate: 4deg;}
+.rotate-right {
+  rotate: -4deg;
+}
+.rotate-left {
+  rotate: 4deg;
+}
 
 /*************** 🔍 click-button 공통 ***************/
 .click-button {
   font-family: "Advent Pro", sans-serif;
-  font-size: min(2.4rem,2vw);
-  padding: .8rem 8.8rem;
+  font-size: min(2.4rem, 2vw);
+  padding: 0.8rem 8.8rem;
   margin-top: 4rem;
   background: var(--primary-color);
   color: var(--background-color);
-  opacity: .9;
-  transition: opacity .5s linear;
+  opacity: 0.9;
+  transition: opacity 0.5s linear;
   cursor: pointer;
 }
 .click-button:hover {
