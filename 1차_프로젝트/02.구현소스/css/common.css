@@ -168,10 +168,10 @@ h2 {
 
 /*************** 텍스트 회전 각도 ***************/
 .rotate-right {
-  rotate: -4deg;
+  rotate: -2deg;
 }
 .rotate-left {
-  rotate: 4deg;
+  rotate: 2deg;
 }
 
 /*************** 🔍 click-button 공통 ***************/

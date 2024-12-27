@@ -48,6 +48,7 @@ main {
 }
 .marquee-wrap {
   display: flex;
+  width: 101%;
   overflow: hidden;
 }
 @keyframes move-txt-ani {
